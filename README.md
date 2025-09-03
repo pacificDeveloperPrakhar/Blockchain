@@ -5,4 +5,4 @@
 
 way of creating the memonics the 
 
-![alt text](./public/memonics.png)
+![alt text](./public/memonics1.png)
