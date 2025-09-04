@@ -20,3 +20,38 @@ the lock will be remained as soon as the mute guard is dropped off from the memo
 ![alt textt](./public/mutex_guard_excalidraw.png)
 
 #### WARNING:We are using the no td feaure of the lazy static meaning the spin lock version of mutex we are using is the cpu extensive and is often used for the bare metal ,Use std version over the no std version
+
+
+
+# Pallet
+
+pallet are these modular functionlaity that are 
+like plug in for the blockchain runtime.
+
+* they are sort of use in substrate that is a framework used to create custom blockchain for
+
+* It’s not a blockchain itself → Substrate is a blockchain development framework.
+
+* Polkadot is built using Substrate. Many other chains (Kusama, Acala, Moonbeam, etc.) are also Substrate-based.
+
+
+## MuexGuard working
+
+* std::sync::Mutex vs spin::Mutex
+
+### std::sync::Mutex 
+
+* Part of the standard library (std).
+
+* Uses OS-level synchronization primitives (like futexes on Linux, critical sections on Windows).
+
+* Requires an operating system → not usable in #![no_std] environments.
+
+* spin::Mutex (from the spin crate
+)
+
+* Implemented with spinlocks: the thread busy-waits in a loop until the lock is free.
+
+* Does not require the OS or syscalls → works in #![no_std] environments like kernels, bare-metal, or embedded.
+
+* But: CPU keeps spinning while waiting, so it’s not efficient in multitasking environments (OS with many threads).
