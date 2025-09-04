@@ -18,7 +18,7 @@ fn main() {
 // balance_pallet.lock().balance.insert(String::from("john"),234);
 // ===================================================================================================================
 use crate::bip::bip39::gen_seed_pbkdf2;
-let result=gen_seed_pbkdf2("decade possible vapor music social tumble shrimp sea purity dress avocado special result episode snack mansion announce level fetch bike oil legend celery fortune","4321");
+let result=gen_seed_pbkdf2("exhaust hair stable across valley claw episode document focus bundle exact mouse inquiry nasty sense believe fence lobster pull one noise palace stick pudding","");
 use hex::encode;
 println!("{}",encode(result));
 }

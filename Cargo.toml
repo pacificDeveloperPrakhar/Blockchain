@@ -23,6 +23,7 @@ hmac = "0.12.1"
 solana-sdk = "3.0.0"
 bip39 = "2.2.0"
 anyhow = "1.0.99"
+unicode-normalization = "0.1.24"
 
 [lib]
 name = "blockchain_rust"

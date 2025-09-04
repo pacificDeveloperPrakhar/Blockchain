@@ -141,6 +141,7 @@ dependencies = [
  "sha2",
  "solana-sdk",
  "spin",
+ "unicode-normalization",
 ]
 
 [[package]]
