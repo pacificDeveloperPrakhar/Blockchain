@@ -18,3 +18,5 @@ the lock will be remained as soon as the mute guard is dropped off from the memo
 
 
 ![alt textt](./public/mutex_guard_excalidraw.png)
+
+#### WARNING:We are using the no td feaure of the lazy static meaning the spin lock version of mutex we are using is the cpu extensive and is often used for the bare metal ,Use std version over the no std version
