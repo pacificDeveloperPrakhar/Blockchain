@@ -1,11 +1,29 @@
 [package]
-name = "blockchain"
+name = "blockchain_rust"
 version = "0.1.0"
 edition = "2024"
 [profile.dev]
 overflow-checks=true
+
+[[bin]]
+name="blockchain_rust"
+path="src/main.rs"
+
 [dependencies]
 chrono = "0.4.41"
 hex = "0.4.3"
 rand = "0.9.2"
 sha2 = "0.10.9"
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+spin = "0.9.8"
+pbkdf2 = "0.12.2"
+bs58 = "0.5.1"
+ed25519-dalek = "2.2.0"
+hmac = "0.12.1"
+solana-sdk = "3.0.0"
+bip39 = "2.2.0"
+anyhow = "1.0.99"
+
+[lib]
+name = "blockchain_rust"
+path = "src/lib.rs"

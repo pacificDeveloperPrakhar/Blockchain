@@ -30,3 +30,15 @@ pub fn binary_to_11bitDecimalNumber(s:&String)->Vec<u16>
   }
   return numbers;
 }
+
+// ============================================================================================================
+// now the utilities function to convert the string of memonics to the vector of string
+pub fn to_vec_string(memonics:&str)->Vec<String>
+{
+    let mut result:Vec<String>=Vec::new();
+    for str in String::from(memonics).split_whitespace()
+    {
+        result.push(String::from(str));
+    }
+    return result;
+}

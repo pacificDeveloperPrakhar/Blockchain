@@ -27,12 +27,13 @@ impl Transaction
 {
     pub fn verify()->bool
     {
-        return true,
-    },
-    pub fn new(initiator:String,beneficiar:String,amount:u64)->self
-    {
-      return self {
-
-      }
+        return true;
     }
+
+    // pub fn new(initiator:String,beneficiar:String,amount:u64)->self
+    // {
+    //   return self {
+
+    //   }
+    // }
 }
